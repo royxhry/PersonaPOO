@@ -7,18 +7,21 @@ public class MainPersona {
             String apellido = sc.nextLine();
             System.out.println("Ingresa edad:");
             int edad = sc.nextInt();
+            
             System.out.println("Ingresa tu altura:");
             double altura = sc.nextDouble();
             Persona ps= new Persona();
-            
-            ps.nombre=nombre;
-            ps.apellido=apellido;
-            ps.edad=edad;
-            ps.altura=altura;
+            ps.setNombre(nombre);
+            ps.setApellido(apellido);
+            ps.setEdad(edad);
+            ps.setAltura(altura);
 
-            ps.mostrarNombreA();
-            ps.mostrarEdad();
-            ps.mostrarAltura();
+            ps.getNombre();
+            ps.getApellido();
+            ps.getEdad();
+            ps.getEdad();
+            System.out.println(ps.toString());
+
             sc.close();
 
     }
